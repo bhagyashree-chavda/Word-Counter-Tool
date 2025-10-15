@@ -14,6 +14,9 @@ public class WordCount {
     public WordCount(String filePath)
     {
         this.filePath = filePath;
+        reset();
+    }
+    private void reset() {
         lineCount = 0;
         wordCount = 0;
         charCount = 0;
@@ -21,6 +24,7 @@ public class WordCount {
 
      public void count()
      {
+         reset();
          try(BufferedReader reader = new BufferedReader(new FileReader(filePath)))
          {
            String  line;

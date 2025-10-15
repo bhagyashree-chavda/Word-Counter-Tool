@@ -1,0 +1,3 @@
+Let’s clarify first:
+Regular expressions (regex) are not directly used to count the number of words — they are used to match patterns.
+However, you can use a regex to find all words, and then count how many matches occur.

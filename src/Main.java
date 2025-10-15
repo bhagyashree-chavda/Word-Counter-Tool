@@ -10,6 +10,9 @@ public class Main {
         WordCount wordCount = new WordCount(filePath);
         wordCount.count();
         wordCount.printStatus();
+        System.out.println("\nRunning again on same object...\n");
+        wordCount.count();  // ✅ will reset and recount
+        wordCount.printStatus();
 
 
     }
